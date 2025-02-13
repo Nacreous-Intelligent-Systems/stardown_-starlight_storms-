@@ -1,2 +1,3 @@
 # stardown_-starlight_storms-
-STARDOWN, but smaller in scope.
+ALT Title: Touhou Nitori's TV Station
+
