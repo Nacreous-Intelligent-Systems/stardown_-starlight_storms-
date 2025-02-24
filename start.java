@@ -1,9 +1,8 @@
-import java.io.IOException;
+
 import secret.*;
 
-
 public class start {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
 
         //Don't edit above this line.
 
