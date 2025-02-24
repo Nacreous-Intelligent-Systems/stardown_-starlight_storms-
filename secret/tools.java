@@ -10,8 +10,8 @@ import static java.nio.file.StandardCopyOption.*;
 
 public class tools {
     static void clearScreen() {
-        System.out.print("\n\n\n\n\nIf you are seeing this, scroll down!\n");
-        for (int i = 0; i < 5; i++) {
+        System.out.print("\n\n\n\n\nIf you are seeing this, scroll down!\n\n\n\n\n\n\n");
+        for (int i = 0; i < 3; i++) {
             System.out.println("\n\n\n\n\n\n\n\n");
         }
         System.out.print("\033[H\033[2J");
@@ -20,16 +20,16 @@ public class tools {
 
     static void copyFile(Path source, Path dest) {
         //PathMatcher matcher = FileSystems.getDefault().getPathMatcher("glob:*.*");
-            try {
-                Files.copy(source, dest, REPLACE_EXISTING);
-            } catch (IOException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-            }
-        
+        try {
+            Files.copy(source, dest, REPLACE_EXISTING);
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+
     }
 
-    static void sleep (int duration) {
+    static void sleep(int duration) {
         try {
             Thread.sleep(duration);
         } catch (InterruptedException e) {
@@ -38,8 +38,14 @@ public class tools {
         }
     }
 
-    static void beat () {
+    static void beat() {
         sleep(2000);
+    }
+
+    static void prep() {
+        System.out.print("Girls are now preparing...\n"); // touhou project loading screen reference.
+        tools.sleep(2000);
+        tools.clearScreen();
     }
 
 }

@@ -50,10 +50,8 @@ public class episode_zero {
 
         //loading + initialization
 
+        tools.prep();
 
-        System.out.print("Girls are now preparing...\n"); // touhou project loading screen reference.
-        tools.sleep(2000);
-        tools.clearScreen();
 
         //story [prologue]
 
