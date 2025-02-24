@@ -14,9 +14,14 @@ public class tools {
         System.out.flush();
     }
 
-    static void copyFile(Path source, Path dest) throws IOException {
+    static void copyFile(Path source, Path dest) {
         //PathMatcher matcher = FileSystems.getDefault().getPathMatcher("glob:*.*");
-            Files.copy(source, dest, REPLACE_EXISTING);
+            try {
+                Files.copy(source, dest, REPLACE_EXISTING);
+            } catch (IOException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
         
     }
 
@@ -27,6 +32,10 @@ public class tools {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
+    }
+
+    static void beat () {
+        sleep(2000);
     }
 
 }
