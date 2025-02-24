@@ -10,8 +10,9 @@ import static java.nio.file.StandardCopyOption.*;
 
 public class tools {
     static void clearScreen() {
-        for (int i = 0; i < 25; i++) {
-            System.out.println("\n");
+        System.out.print("\n\n\n\n\nIf you are seeing this, scroll down!\n");
+        for (int i = 0; i < 5; i++) {
+            System.out.println("\n\n\n\n\n\n\n\n");
         }
         System.out.print("\033[H\033[2J");
         System.out.flush();
