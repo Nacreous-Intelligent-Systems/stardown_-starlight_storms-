@@ -6,7 +6,7 @@ public class start {
         //Don't edit above this line.
 
 
-        boolean reset = false;
+        //boolean reset = true; <- Use to reset password.
         episode_zero.start(false);
 
         //Don't edit below this line.

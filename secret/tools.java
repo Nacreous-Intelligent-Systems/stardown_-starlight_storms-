@@ -10,6 +10,7 @@ import static java.nio.file.StandardCopyOption.*;
 
 public class tools {
     static void clearScreen() {
+        // Newlines are to force compatibility with clearing the screen.
         System.out.print("\n\n\n\n\nIf you are seeing this, scroll down!\n\n\n\n\n\n\n");
         for (int i = 0; i < 3; i++) {
             System.out.println("\n\n\n\n\n\n\n\n");
@@ -43,6 +44,7 @@ public class tools {
     }
 
     static void prep() {
+        tools.clearScreen();
         System.out.print("Girls are now preparing...\n"); // touhou project loading screen reference.
         tools.sleep(2000);
         tools.clearScreen();

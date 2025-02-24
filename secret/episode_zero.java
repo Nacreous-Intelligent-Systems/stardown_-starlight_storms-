@@ -17,12 +17,17 @@ public class episode_zero {
     }
 
     //Overloaded method!! Clear if two values of "true" are passed into the method.
+    //Overloading methods before we even learn about Integers!
     public static void start(boolean finish, boolean reset) {
-        if (!(finish && reset)) {
-            //either finish or reset is false (likely reset). section fail.
+        if (!finish) {
+            //finish is false; section fail.
+            section1fail();
+        }
+        else if (!reset) {
+            //reset is false; section fail.
             section1bonus();
         } else {
-            //finish == reset == true; section clear! (+1)
+            //reset == true; section clear! (+1)
             section2();
         }
     }
@@ -34,19 +39,23 @@ public class episode_zero {
 
     private static void section1bonus() {
         System.out.print("Not done yet!");
-        //Change "reset" to true!
+        //Change "reset" to true! Computer output should be the same as section1.
     }
 
-    public static void section1() {
+    private static void section1fail() {
+        System.out.print("how did you even-");
+        //finish still needs to be true.
+    }
+
+    private static void section1() {
         System.out.print("Not done yet!");
         //Use variable "reset" to overload the method
     }
 
-    public static void prologue() {
+    private static void prologue() {
 
         Path source = Paths.get("secret/text/prologue.txt");
         Path dest = Paths.get("prologue.txt");
-        tools.clearScreen();
 
         //loading + initialization
 
