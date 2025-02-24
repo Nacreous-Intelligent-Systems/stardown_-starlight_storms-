@@ -1,19 +1,32 @@
 package secret;
 
-//import java.io.IOException;
-//import java.nio.file.FileSystems;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class act1chapter1 {
-    public static void start() {
+    public static void start(boolean finish) {
+        if (finish) {
+            sector1();
+        }
+        else {
+            prologue();
+        }
+    }
+
+    public static void sector1() {
+
+    }
+
+    public static void prologue() {
+
         Path source = Paths.get("secret/text/prologue.txt");
         Path dest = Paths.get("prologue.txt");
         tools.clearScreen();
 
         //loading + initialization
-        
-        System.out.printf("Girls are now preparing...\n"); // touhou loading screen reference.
+
+
+        System.out.printf("Girls are now preparing...\n"); // touhou project loading screen reference.
         tools.sleep(2000);
         tools.clearScreen();
 
@@ -31,7 +44,7 @@ public class act1chapter1 {
         tools.beat();
         System.out.printf("[Nitori]: It should be visible in the file explorer.\n\n");
         tools.beat();
-        System.out.printf("\tI've titled it 'prologue.txt' because this seems like it could spiral into another incident.\n\n");
+        System.out.printf("\tI've titled it 'prologue.txt'.\n\n");
         tools.beat();
         System.out.printf("\tTime to get to work.\n\n");
         tools.beat();
