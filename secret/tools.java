@@ -9,7 +9,7 @@ import static java.nio.file.StandardCopyOption.*;
 
 
 public class tools {
-    public static void clearScreen() {
+    static void clearScreen() {
         System.out.print("\033[H\033[2J");
         System.out.flush();
     }
@@ -18,6 +18,15 @@ public class tools {
         //PathMatcher matcher = FileSystems.getDefault().getPathMatcher("glob:*.*");
             Files.copy(source, dest, REPLACE_EXISTING);
         
+    }
+
+    static void sleep (int duration) {
+        try {
+            Thread.sleep(duration);
+        } catch (InterruptedException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
     }
 
 }
