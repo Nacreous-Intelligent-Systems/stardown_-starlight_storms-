@@ -8,8 +8,8 @@ This project and it's author are not affiliated with ZUN or Team Shanghai Alice 
 ## Rules
 ### Don't edit (or view) anything in the "Secret" folder.
 ### Don't break start.java by editing above/below the "do not edit" comments.
-### VSCode is recommended. I had some trouble getting this to work on IntelliJ without the IDE giving some solutions away.
-Also, IntelliJ doesn't have a good way to clear the terminal, so I had to just spam newlines to ensure compatibility.
+### VSCode is recommended. The screen does not clear in IntelliJ.
+
 
 ## Getting Started
 Run start.java. No compilation should be necessary.
