@@ -8,5 +8,5 @@ public class settings {
     // Default: 2 (50ms per character)
     // Fast: 1 (25ms per character)
     // Slow: 4 (100ms per character)
-    public static int textScrollSpeed = 2;
+    public static int textScrollSpeed = 1;
 }
