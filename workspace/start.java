@@ -9,7 +9,7 @@ public class start {
         
         // Don't edit above this line.
 
-        episode_zero.start();
+        episode_zero.bonus_is();
 
         // Don't edit below this line.
     
